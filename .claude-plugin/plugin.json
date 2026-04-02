@@ -1,0 +1,8 @@
+{
+  "name": "posthaste-skill",
+  "version": "1.0.0",
+  "description": "Manage PostHaste project templates and file structures. Create projects from templates, list templates, design new templates, and organize project assets — all without PostHaste running.",
+  "author": {
+    "name": "alnutile"
+  }
+}

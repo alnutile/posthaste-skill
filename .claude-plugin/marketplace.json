@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "posthaste-skill",
+  "description": "Manage PostHaste project templates and file structures directly from Claude",
+  "owner": {
+    "name": "alnutile"
+  },
+  "plugins": [
+    {
+      "name": "posthaste-skill",
+      "description": "Manage PostHaste project templates and file structures. Create projects from templates, list templates, design new templates, and organize project assets — all without PostHaste running.",
+      "source": "./",
+      "category": "productivity",
+      "keywords": ["posthaste", "film", "project-management", "templates", "folder-structure"]
+    }
+  ]
+}
