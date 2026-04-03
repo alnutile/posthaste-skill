@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+  <name>YouTube Training Video</name>
+  <items>
+    <item type="folder" name="[project]">
+      <item type="folder" name="01_Script">
+        <item type="file" name="script.md"/>
+        <item type="file" name="outline.md"/>
+        <item type="file" name="notes.md"/>
+      </item>
+      <item type="folder" name="02_Screenshots"/>
+      <item type="folder" name="03_B-Roll"/>
+      <item type="folder" name="04_Scenes"/>
+      <item type="folder" name="05_Edit"/>
+      <item type="folder" name="06_Exports">
+        <item type="folder" name="Review"/>
+        <item type="folder" name="Final"/>
+      </item>
+      <item type="file" name="checklist.md"/>
+    </item>
+  </items>
+</template>
