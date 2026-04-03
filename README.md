@@ -10,11 +10,12 @@ A [CoWork](https://www.anthropic.com/products/claude) skill that brings [Post Ha
 
 ## Included Templates
 
-| Template | Use Case | Structure |
+| Template | Use Case | What You Get |
 |---|---|---|
+| **AI Film Production** | AI-generated short films, animations, composited video | 01_Graphics (Characters, Environments, Props, Storyboard), 02_Audio (SFX, Music, VO, Dialogue), 03_Video (Generated, Composited), 04_Edit, 05_Exports, 06_Docs (Brief, Notes, Prompts) |
 | **YouTube Training Video** | Screen-recorded tutorials, how-to videos, training content | `01_Script/` (script.md, outline.md, notes.md), `02_Screenshots/`, `03_B-Roll/`, `04_Scenes/`, `05_Edit/`, `06_Exports/` + a pre-filled edit-to-publish `checklist.md` |
 
-> More templates coming soon. Want to add one? See [Contributing](#contributing) below.
+> Want to add a template? See [Contributing](#contributing) below.
 
 ## What It Does
 
