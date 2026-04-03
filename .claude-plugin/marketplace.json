@@ -11,7 +11,7 @@
     {
       "name": "posthaste-skill",
       "description": "Manage Post Haste project templates and folder structures through conversation. Create projects, design templates, place assets, and browse recent projects \u2014 without opening the app.",
-      "source": "./",
+      "source": "./posthaste-file-management",
       "category": "productivity",
       "homepage": "https://github.com/alnutile/posthaste-skill",
       "keywords": [
