@@ -1,8 +1,8 @@
-# PostHaste File Management Skill
+# Project Template Skill
 
-A [CoWork](https://www.anthropic.com/products/claude) skill that brings [Post Haste](https://www.digitalrebellion.com/posthaste/) project template management into your AI assistant — without needing the app open.
+A [Cowork](https://www.anthropic.com/products/claude) skill for managing project folder structures through conversation. Tell Claude what kind of project you're starting and it builds the whole folder tree for you.
 
-> **Post Haste** by [Digital Rebellion](https://www.digitalrebellion.com/) is a free Mac/Windows desktop app for creating consistent project folder structures from customizable templates. This skill reads and works with Post Haste's files directly on disk.
+> **Inspired by [Post Haste](https://www.digitalrebellion.com/posthaste/)** by Digital Rebellion — a great free app for creating project folder structures from templates. This skill borrows the same idea (and can read Post Haste's .phtemplate format) but works entirely through Cowork. You don't need Post Haste installed to use it.
 
 ---
 
