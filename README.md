@@ -6,6 +6,16 @@ A [CoWork](https://www.anthropic.com/products/claude) skill that brings [Post Ha
 
 ---
 
+---
+
+## Included Templates
+
+| Template | Use Case | Structure |
+|---|---|---|
+| **YouTube Training Video** | Screen-recorded tutorials, how-to videos, training content | `01_Script/` (script.md, outline.md, notes.md), `02_Screenshots/`, `03_B-Roll/`, `04_Scenes/`, `05_Edit/`, `06_Exports/` + a pre-filled edit-to-publish `checklist.md` |
+
+> More templates coming soon. Want to add one? See [Contributing](#contributing) below.
+
 ## What It Does
 
 | Capability | Description |
@@ -73,14 +83,22 @@ Once installed, just talk to CoWork naturally:
 
 ```
 posthaste-skill/
-├── SKILL.md                        # Skill definition and instructions
-├── references/
-│   └── template-format.md          # PostHaste .phtemplate XML schema reference
-└── scripts/
-    ├── read_template.py            # Parse and display a template
-    ├── create_project.py           # Create folder structure from template + params
-    ├── new_template.py             # Generate a new .phtemplate XML file
-    └── list_projects.py            # List recent projects from prefs plist
+├── .claude-plugin/
+│   ├── marketplace.json            # Cowork marketplace manifest
+│   └── plugin.json                 # Plugin metadata
+└── skills/
+    └── posthaste-file-management/
+        ├── SKILL.md                    # Skill definition and instructions
+        ├── references/
+        │   └── template-format.md      # PostHaste .phtemplate XML schema
+        ├── scripts/
+        │   ├── read_template.py        # Parse and display a template
+        │   ├── create_project.py       # Create folder structure from template
+        │   ├── new_template.py         # Generate a new .phtemplate XML
+        │   └── list_projects.py        # List recent projects from prefs
+        └── templates/
+            ├── youtube-training-video.phtemplate
+            └── youtube-training-checklist.md
 ```
 
 ---
