@@ -89,7 +89,10 @@ def build_params(raw_params):
 
     # Defaults
     params["date"] = datetime.now().strftime("%Y-%m-%d")
-    params["user"] = os.getlogin() if hasattr(os, "getlogin") else "user"
+    try:
+        params["user"] = os.getlogin()
+    except OSError:
+        params["user"] = os.environ.get("USER", os.environ.get("USERNAME", "user"))
 
     for raw in raw_params:
         if "=" in raw:

@@ -38,6 +38,29 @@ Variables use `[square_bracket]` syntax:
 
 ---
 
+## Built-in Templates
+
+When the PostHaste templates directory is not found (e.g. sandbox, container, or
+PostHaste not installed), fall back to the bundled reference templates in
+`references/`. These can be used directly with `create_project.py` or the folder
+structure can be created manually via shell commands.
+
+### Video Production (traditional)
+Standard film/video workflow: Footage → Audio → Graphics → Edit → Exports → Docs.
+See `references/template-format.md` for the full XML example.
+
+### AI Film Production
+Optimized for AI-generated filmmaking where image/asset creation comes first:
+Graphics (Characters, Environments, Props, Storyboard) → Audio → Video (Generated,
+Composited) → Edit → Exports → Docs. Includes a `_Prompts.txt` file for tracking
+generation prompts. See `references/ai-film-template.phtemplate`.
+
+When offering template choices, always include both traditional and AI Film options.
+If the user mentions AI filmmaking, image generation, or character rendering, default
+to the AI Film Production template.
+
+---
+
 ## Core Tasks
 
 ### 1. List Templates
@@ -67,9 +90,18 @@ Use `scripts/list_projects.py`.
 ### 5. Place an Asset
 When user asks where a file belongs:
 1. Identify the current project folder
-2. Match file type to folder (MP4/footage, WAV/audio, logo/graphics, PDF/docs)
+2. Match file type to folder using these rules:
+   - PNG/JPG/WebP character renders → `Graphics/Characters`
+   - PNG/JPG environment/background images → `Graphics/Environments`
+   - PNG/JPG prop or object images → `Graphics/Props`
+   - Storyboard frames or sequences → `Graphics/Storyboard`
+   - MP4/MOV footage or generated video → `Video/Generated` or `Footage/RAW`
+   - WAV/MP3/AIFF audio → `Audio/` (SFX, Music, VO, or Dialogue as appropriate)
+   - Logo/brand assets → `Graphics/Assets`
+   - PDF/TXT docs → `Docs/`
 3. Suggest the specific subfolder
 4. Offer to move/copy the file there
+5. Offer to create a sub-subfolder if it helps organization (e.g. `Characters/Emma`)
 
 ---
 
@@ -78,7 +110,7 @@ When user asks where a file belongs:
 1. Replace `[project]` with project name
 2. Replace `[client]` with client name (skip item if entire filename and blank)
 3. Replace `[date]` with today in YYYY-MM-DD format
-4. Replace `[user]` with os.getlogin()
+4. Replace `[user]` with os.getlogin() (falls back to $USER / $USERNAME env var)
 5. Any file/folder named `[template]` -> rename to full project name
 6. Strip leading/trailing separators from blank segments
 
@@ -87,6 +119,7 @@ When user asks where a file belongs:
 ## Reference Files
 
 - `references/template-format.md` — XML schema for `.phtemplate` files
+- `references/ai-film-template.phtemplate` — Built-in AI Film Production template
 - `scripts/read_template.py` — Parse and display a template
 - `scripts/create_project.py` — Create folder structure from template + params
 - `scripts/list_projects.py` — Read recent projects from prefs plist

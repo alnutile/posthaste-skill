@@ -9,7 +9,7 @@
       "name": "posthaste-skill",
       "source": "./posthaste-file-management",
       "description": "Manage Post Haste project templates and folder structures through conversation. Create projects, design templates, place assets, and browse recent projects \u2014 without opening the app.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Alfred Nutile"
       },

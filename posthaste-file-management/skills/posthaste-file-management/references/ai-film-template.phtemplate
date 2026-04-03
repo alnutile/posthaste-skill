@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+  <name>AI Film Production</name>
+  <items>
+    <item type="folder" name="[project]">
+      <item type="folder" name="01_Graphics">
+        <item type="folder" name="Characters"/>
+        <item type="folder" name="Environments"/>
+        <item type="folder" name="Props"/>
+        <item type="folder" name="Storyboard"/>
+        <item type="folder" name="Exports"/>
+      </item>
+      <item type="folder" name="02_Audio">
+        <item type="folder" name="SFX"/>
+        <item type="folder" name="Music"/>
+        <item type="folder" name="VO"/>
+        <item type="folder" name="Dialogue"/>
+      </item>      <item type="folder" name="03_Video">
+        <item type="folder" name="Generated"/>
+        <item type="folder" name="Composited"/>
+      </item>
+      <item type="folder" name="04_Edit">
+        <item type="file" name="[project].prproj"/>
+      </item>
+      <item type="folder" name="05_Exports">
+        <item type="folder" name="Delivery"/>
+        <item type="folder" name="Review"/>
+      </item>
+      <item type="folder" name="06_Docs">
+        <item type="file" name="[project]_Brief.txt"/>
+        <item type="file" name="[project]_Notes.txt"/>
+        <item type="file" name="[project]_Prompts.txt"/>
+      </item>
+    </item>
+  </items>
+</template>
