@@ -1,17 +1,26 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "posthaste-skill",
-  "description": "Manage PostHaste project templates and file structures directly from Claude",
+  "version": "1.0.0",
+  "description": "Post Haste file management skill for CoWork \u2014 create projects, manage templates, and organize assets.",
   "owner": {
-    "name": "alnutile"
+    "name": "Alfred Nutile",
+    "url": "https://github.com/alnutile"
   },
   "plugins": [
     {
       "name": "posthaste-skill",
-      "description": "Manage PostHaste project templates and file structures. Create projects from templates, list templates, design new templates, and organize project assets — all without PostHaste running.",
+      "description": "Manage Post Haste project templates and folder structures through conversation. Create projects, design templates, place assets, and browse recent projects \u2014 without opening the app.",
       "source": "./",
       "category": "productivity",
-      "keywords": ["posthaste", "film", "project-management", "templates", "folder-structure"]
+      "homepage": "https://github.com/alnutile/posthaste-skill",
+      "keywords": [
+        "posthaste",
+        "film",
+        "project-management",
+        "templates",
+        "folder-structure"
+      ]
     }
   ]
 }
